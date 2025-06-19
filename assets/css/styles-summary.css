@@ -1,0 +1,225 @@
+/* KaziSellers CSS Summary - Student Web Development Project */
+
+/*
+================================================================================
+BOOTSTRAP 5 INTEGRATION - What I Used and Learned
+================================================================================
+Bootstrap Version: 5.1.3 from CDN
+Link: https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css
+
+What Bootstrap Gave Me:
+- Grid System: container, row, col-md-6, col-lg-4 for layouts
+- Button Classes: btn, btn-primary, btn-secondary for buttons
+- Card Components: card, card-body for product displays
+- Spacing: mb-3, mt-4, p-3 for margins and padding
+- Flexbox: d-flex, justify-content-between for alignment
+
+How Bootstrap Helped:
+- Saved time with ready-made components
+- Made my site work on mobile automatically
+- Gave consistent styling across different browsers
+- Made the site look professional
+================================================================================
+*/
+
+/* 1. BASIC SETUP - Fonts and Page Background */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes sizing easier */
+}
+
+/* Main page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed; /* Background stays in place when scrolling */
+    min-height: 100vh; /* Full screen height */
+    color: #333;
+}
+
+/* 2. HEADER AND NAVIGATION */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 15px 0;
+    position: sticky; /* Stays at top when scrolling */
+    top: 0;
+    z-index: 1000; /* Makes sure it stays on top */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    float: left; /* Positions logo on left side */
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #667eea;
+}
+
+nav {
+    float: right; /* Positions navigation on right side */
+}
+
+.nav-links li {
+    display: inline-block; /* Makes list items horizontal */
+    margin-left: 20px;
+}
+
+.nav-links li a:hover {
+    background-color: #667eea;
+    color: white; /* Changes color when mouse hovers over */
+}
+
+/* 3. BUTTONS - Gradient styling */
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2); /* Diagonal gradient */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px); /* Lifts button up slightly */
+    color: white;
+}
+
+/* 4. PRODUCT LAYOUT - CSS Grid */
+.product-grid {
+    display: grid; /* Uses CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 25px; /* Space between items */
+    padding: 20px 0;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; /* Clips content to rounded corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Drop shadow */
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Card moves up when hovered */
+}
+
+/* 5. FORMS - Input styling */
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limits form width */
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #667eea; /* Changes border color when clicked */
+    outline: none; /* Removes default browser outline */
+}
+
+/* 6. CATEGORIES - Grid layout */
+.category-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px); /* Lifts card on hover */
+    color: white;
+}
+
+/* 7. DASHBOARD - Stats cards */
+.stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #667eea;
+}
+
+/* 8. CHAT MESSAGES */
+.message-sent {
+    background: #667eea;
+    color: white;
+    margin-left: auto; /* Pushes message to right side */
+}
+
+.message-received {
+    background: #f1f3f5;
+    color: #333;
+}
+
+/* 9. MOBILE RESPONSIVE - Media queries */
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2rem; /* Smaller text on mobile */
+    }
+    
+    .nav-links li {
+        display: block; /* Stacks navigation vertically */
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
+/*
+================================================================================
+WHAT I LEARNED FROM THIS PROJECT:
+================================================================================
+
+1. CSS BASICS:
+   - How to use classes and IDs
+   - Box model (margin, padding, border)
+   - Colors, fonts, and text styling
+
+2. LAYOUT TECHNIQUES:
+   - CSS Grid for product layouts
+   - Flexbox for centering content
+   - Float for simple positioning
+
+3. RESPONSIVE DESIGN:
+   - Media queries for mobile devices
+   - Making grids adapt to screen size
+   - Mobile-first thinking
+
+4. MODERN CSS:
+   - CSS transitions for smooth animations
+   - Transform for hover effects
+   - Gradients for colorful backgrounds
+
+5. WORKING WITH BOOTSTRAP:
+   - Using pre-made components
+   - Customizing Bootstrap with my own CSS
+   - Understanding grid systems
+
+6. BEST PRACTICES:
+   - Organizing CSS with comments
+   - Using consistent naming
+   - Making code readable and maintainable
+================================================================================
+*/
