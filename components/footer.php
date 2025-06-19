@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col-md-6">
                 <h5><i class="fas fa-store"></i> KaziSellers</h5>
-                <p class="mb-2">South Africa's premier student marketplace</p>
-                <p class="small">Connecting students across the country for safe, easy trading</p>
+                <p class="mb-2">South Africa's premier local marketplace</p>
+                <p class="small">Connecting locals across the country for safe, easy trading</p>
             </div>
             <div class="col-md-3">
                 <h6>Quick Links</h6>
@@ -34,7 +34,7 @@
         <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2);">
         <div class="row align-items-center">
             <div class="col-md-8">
-                <p class="mb-0 small">&copy; <?php echo date('Y'); ?> KaziSellers. Built by students, for students.</p>
+                <p class="mb-0 small">&copy; <?php echo date('Y'); ?> KaziSellers. Built by students, for locals.</p>
             </div>
             <div class="col-md-4 text-md-end">
                 <small class="text-muted">
