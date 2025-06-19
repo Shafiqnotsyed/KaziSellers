@@ -70,7 +70,7 @@ $cssPath = "assets/css/styles.css";
                                 <div class="col-md-6">
                                     <i class="fas fa-plus-circle fa-3x text-success mb-3"></i>
                                     <h4 class="text-dark">Sell Anything</h4>
-                                    <p class="text-muted">List your items and reach students nationwide in minutes</p>
+                                    <p class="text-muted">List your items and reach locals nationwide in minutes</p>
                                     <a href="pages/register.php" class="btn btn-success btn-lg">
                                         <i class="fas fa-plus"></i> Start Selling
                                     </a>
@@ -88,7 +88,7 @@ $cssPath = "assets/css/styles.css";
         <div class="row">
             <div class="col-12 text-center mb-5">
                 <h2 class="text-white">Why Choose KaziSellers?</h2>
-                <p class="text-light">Built by students, for students</p>
+                <p class="text-light">Built by students, for locals</p>
             </div>
         </div>
         
@@ -205,7 +205,7 @@ $cssPath = "assets/css/styles.css";
                     <div class="card-body p-5">
                         <h3 class="text-white mb-3">Ready to Start Trading?</h3>
                         <p class="text-light mb-4">
-                            Join thousands of students already buying and selling on KaziSellers
+                            Join thousands of locals already buying and selling on KaziSellers
                         </p>
                         <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
                             <a href="pages/register.php" class="btn btn-primary btn-lg">
@@ -227,8 +227,8 @@ $cssPath = "assets/css/styles.css";
         <div class="row">
             <div class="col-md-6">
                 <h5><i class="fas fa-store"></i> KaziSellers</h5>
-                <p class="mb-2">South Africa's premier student marketplace</p>
-                <p class="small">Connecting students across the country for safe, easy trading</p>
+                <p class="mb-2">South Africa's premier locals marketplace</p>
+                <p class="small">Connecting locals across the country for safe, easy trading</p>
             </div>
             <div class="col-md-3">
                 <h6>Quick Links</h6>
